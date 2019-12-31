@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <div class="row">
+      <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setactiveProject(1);" style="color: #788786;"> Health Care analytics </a>
+          </li>
+      </ul>
+      <div>
+        <div id="home">
+            <app-health-care-analytics *ngIf="healthAnalysis"></app-health-care-analytics>
+        </div>
+       
+      </div>
+    </div>
+</div>

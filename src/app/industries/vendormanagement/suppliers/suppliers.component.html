@@ -1,0 +1,300 @@
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 p-l-r-5">
+                    <div class=" bg-card">
+                        <div class="col-md-12 inline p-10">
+                            <div class="col-md-4 p-l-0 m-l-0">
+                                <button class="home_btn"><img style="width: 100% !important;"
+                                        src="../../../../../assets/contactus.png"></button>
+                            </div>
+                            <div class="col-md-8 p-10">
+                                <p class="fs-20"><b>SUPPLIER NAME</b></p>
+                                <div>
+                                    <i class="fa fa-star fa_color m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa_color m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa_color m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star m-l-5" aria-hidden="true"></i>
+                                </div>
+                                <p><i style="font-size:12px" class="fa">&#xf2a0;</i>&nbsp;&nbsp;Phone number</p>
+                                <p><i style="font-size:12px" class="fa">&#xf003;</i> &nbsp;&nbsp;Email Id</p>
+                                <p> <i style="font-size:12px" class="fa">&#xf041;</i> &nbsp;&nbsp;Address</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 p-l-r-5">
+                    <div class=" bg-card">
+                        <div class="col-md-12">
+                            <h5 class="fs-20"><b>TYPES OF MASTERS</b></h5>
+                        </div>
+                        <div class="col-md-12 inline m-r-0">
+                            <div class="col-md-3 inline border">
+                                <button class="home_green"><img src="../../../../assets/pngs/Excel (2).png"></button>
+                                <p class="m-t fs-18"><b>SW(4)</b></p>
+                            </div>
+                            <div class="col-md-3 inline border">
+                                <button class="home_red"><img src="../../../../assets/pngs/Cloud (2).png"></button>
+                                <p class="m-t fs-18"><b>Cloud(0)</b></p>
+                            </div>
+                            <div class="col-md-3 inline border">
+                                <button class="home_green"><img src="../../../../assets/pngs/Telecom (2).png"></button>
+                                <p class="m-t fs-18"><b>Telecom/HW(23)</b></p>
+                            </div>
+                            <div class="col-md-3 inline ">
+                                <button class="home_green"><img
+                                        src="../../../../assets/pngs/Consulting (2).png"></button>
+                                <p class="m-t fs-18"><b>Consulting(43)</b></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-5">
+                <div class="col-md-3 p-l-r-5">
+                    <div class="bg-card ">
+                        <div class="inline m-t-10">
+                            <p class="fs-20"><b>TOTAL SPEND</b></p>
+                        </div>
+                        <div class="inline pointer">
+                            <div class="col-md-12 inline nopadding bg-sub-curr">
+                                <div class="col-md-6  text-center" [ngClass]="{activeclass: isActive(1)}" (click)="showDashboard('COMMITED',1)">
+                                    <p class="p-sub" ><b>COMMITED</b></p>
+                                </div>
+                                <div class="col-md-6  text-center" [ngClass]="{activeclass: isActive(2)}" (click)="showDashboard('SPEND',2)">
+                                    <p class="p-sub" ><b>CURRENT</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline m-t-10">
+                            <div class=" col-md-12 inline  p-30">
+                                <div class="text-right"><img class="img_width1" 
+                                    src="../../../../assets/pngs/spend.png"></div>
+                                <!-- <span><img class=" m-t-10" src="../../../../../assets/arrow.png"></span> -->
+                                <div class="inline  m-t-20">
+                                    <i class="fa fa-arrow-up m-t-20 icon_red" aria-hidden="true"></i>
+                                    <p class="home_red_color">{{COMMITED}}</p>
+                                    <p class="m-t-37">{{SPEND}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5">
+                    <div class="bg-card">
+                        <div class="inline m-t-10">
+                            <p class="fs-20"><b>TOTAL CONTRACTS</b></p>
+                        </div>
+                        <div class="inline m-t-10 m-l-30">
+                            <div class="text-right" >
+                                <img class="  img_width" src="../../../../assets/pngs/contra.png">
+                            </div>
+                            <div class="  inline  m-t-20">
+                                <!-- <div><img class=" m-t-10" src="../../../../../assets/arrow.png"></div> -->
+                                <i class="fa fa-arrow-up m-t-20 icon_red" aria-hidden="true"></i>
+                                <p class="home_red_color">87</p>
+                                <p class="m-t-37">97</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5">
+                    <div class="bg-card">
+                        <div class="inline m-t-10">
+                            <p class="fs-20"><b>TOTAL CRs</b></p>
+                        </div>
+                        <div class="inline m-t-10 m-l-30">
+                            <div class="text-right" >
+                                <img class="  img_width" src="../../../../assets/pngs/crss.png">
+                            </div>
+                            <div class=" inline  m-t-20">
+                                <!-- <div><img class=" m-t-10" src="../../../../../assets/arrow2.png"></div> -->
+                                <i class="fa fa-arrow-up m-t-20 icon_green" aria-hidden="true"></i>
+                                <p class="home_green_color">41</p>
+                                <p class="m-t-37">31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5">
+                    <div class="bg-card">
+                        <div class="inline m-t-10">
+                            <div class=" p-r-0">
+                                <!-- <img class=" " src="../../../../assets/pngs/Savings.png"> -->
+                            </div>
+                            <p class=" fs-20 p-l-0"><b>TOTAL SAVINGS</b></p>
+                        </div>
+                        <div class="inline pointer">
+                            <div class="col-md-12 inline nopadding bg-sub-curr">
+                                <div class="col-md-6  text-center" [ngClass]="{activeclass: isActive1(3)}" (click)="showDashboard1('ANNUALIZED',3)">
+                                    <p class="p-sub"><b>ANNUALIZED</b></p>
+                                    
+                                </div>
+                                <div class="col-md-6  text-center" [ngClass]="{activeclass: isActive1(4)}" (click)="showDashboard1('CURRENT',4)" >
+                                    <p class="p-sub"><b>CURRENT</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline  " >
+                            <div class="text-right">
+                                <img class="  img_width1" src="../../../../assets/pngs/contra.png">
+                            </div>
+                            <div class="  inline  m-t-20">
+                                <!-- <div><img class=" m-t-10" src="../../../../../assets/arrow.png"></div> -->
+                                <i class="fa fa-arrow-up m-t-20 icon_red" aria-hidden="true"></i>
+                                <p class="home_red_color">{{CURRENT}}</p>
+                                <p class="m-t-37">{{ANNUALIZED}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-5">
+                <div class="col-md-6 p-l-r-5">
+                    <div class="background">
+                        <div class="inline">
+                            <img class="icon" src="../../../../assets/pngs/Enterprise.png"> &nbsp;&nbsp;
+                            <p class="fs-20 m-t-10"><b>SPEND BY ENTERPRISE</b></p>
+                        </div>
+                        <div [chart]="scChart" class="chart" id="highcharts-sob44hm-88"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-l-r-5">
+                        <div class="background supplier" >
+                            <div class="pointer">
+                                <div class="col-md-12 inline nopadding bg-sub-curr">
+                                    <div class="col-md-6 " [ngClass]="{activeclass: isActive2(5)}" (click)="showDashboard2(5)">
+                                        <p class="text-center p-sub1 "><b>CONTRACTS BY VALUE</b></p>
+                                    </div>
+                                    <div class="col-md-6 " [ngClass]="{activeclass: isActive2(6)}" (click)="showDashboard2(6)">
+                                        <p class="text-center p-sub1 "><b>PENDING RFX</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="col-md-12  nopadding">
+                                    <table class="nopadding ">
+                                        <tr class="bg-table text-white">
+                                            <th>Contarct Name</th>
+                                            <th>Commited</th>
+                                            <th>Current</th>
+                                            <th>#CRs</th>
+                                            <th>Rating</th>
+                                        </tr>
+                                        <tr class="bg-tr">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-tr2">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-tr">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-tr2">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-tr">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-tr2">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-tr">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-tr2">
+                                            <td>Stanbridge</td>
+                                            <td>$2.1M</td>
+                                            <td>$2.1M</td>
+                                            <td>23</td>
+                                            <td>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star fa_color" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

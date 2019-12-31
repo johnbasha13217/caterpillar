@@ -1,0 +1,29 @@
+.text-white{
+    color: white;
+}
+.p-10{
+    padding: 6px 20px;
+}
+.activeclass{
+    font-weight: bold;background: #ffea01 !important;color:#000000 !important;
+    }
+    .txt-c {
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .container-fluid {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+.m-0 {
+    margin: 0px;
+}
+.m-t-127{
+margin-top: 127px;
+}
+.fixed_header{
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    
+}

@@ -1,0 +1,37 @@
+
+<!-- <div class="row" style="background-color: #000000;">
+    <div class="col-md-12">
+        <div class="col-md-3" style="background-color: #ffea01;" routerLink = "/landingpage">
+            <p class="text-white text-center">Laoding Page</p>
+        </div>
+        <div class="col-md-3" routerLink = "/suppliers">
+            <p  class="text-white text-center">Supplier Details</p>
+        </div>
+        <div class="col-md-3" routerLink = "/category">
+            <p  class="text-white text-center">Category</p>
+        </div>
+        <div class="col-md-3" routerLink = "/dept">
+            <p  class="text-white text-center">DEPT/BU</p>
+        </div>
+    </div>
+</div> -->
+<div class="container-fluid">
+   <div class="fixed_header">
+    <app-header></app-header>
+    <div class="row" style="background-color: #252525;height: 33px;margin: 0px;">
+    <div class="col-md-12" style="display: flex;">
+        <p class="p-10 txt-c" [ngClass]="{activeclass: isActive(1)}" (click)="showDashboard(1)">Overview</p>
+        <p class="p-10 txt-c" [ngClass]="{activeclass: isActive(2)}" (click)="showDashboard(2)">Supplier Profile</p>
+        <p class="p-10 txt-c" [ngClass]="{activeclass: isActive(3)}" (click)="showDashboard(3)">Category Profile</p>
+        <p class="p-10 txt-c" [ngClass]="{activeclass: isActive(4)}" (click)="showDashboard(4)">DEPT/BU Profile</p>
+    </div>
+</div>
+   </div>
+<div class="row m-0 m-t-127">
+    <app-caterpillar-overview *ngIf="showView(1)"></app-caterpillar-overview>
+    <app-suppliers *ngIf="showView(2)"></app-suppliers>
+    <app-category *ngIf="showView(3)"></app-category>
+    <app-dept *ngIf="showView(4)"></app-dept>
+</div>
+
+</div>
